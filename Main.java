@@ -10,6 +10,7 @@ class Main
         int digit=input.nextInt();
         String lower="qwertyuiopasdfghjklzxcvbnm";
         String upper="QWERTYUIOPASDFGHJKLZXCVBNM";
+        String symbol="!@#$%^&*~";
         String password="";
         for(int i=0;i<digit;i++)
         {
@@ -23,6 +24,9 @@ class Main
                         break;
                 case 2: rand=(int)(upper.length()*Math.random());
                         password+=String.valueOf(upper.charAt(rand));
+                        break;
+                case 3: rand=(int)(symbol.length()*Math.random());
+                        password+=String.valueOf(symbol.charAt(rand));
                         break;
             }
         }
